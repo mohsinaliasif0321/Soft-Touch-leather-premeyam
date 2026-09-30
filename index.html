@@ -1,0 +1,1832 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Soft Touch Leather | Natural Sheepskin & Luxury Rugs</title>
+
+<meta name="description"
+content="Soft Touch Leather offers premium natural sheepskins, fluffy sheep rugs and luxury fur rugs for elegant modern interiors.">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,"Segoe UI",Arial,sans-serif;
+    background:#000000;
+    color:#000000;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+:root{
+    --brown:#7f6a5a;
+    --dark:#7f6a5a;
+    --cream:#b99b6b;
+    --light:#ccb787;
+    --text:#eecba8;
+    --muted:#e5d5a7;
+    --border:#0a0909;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(0, 0, 0, 0.94);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(100,70,40,.12);
+}
+
+.navbar{
+    width:90%;
+    max-width:1250px;
+    height:76px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:-.5px;
+    color:var(--dark);
+}
+
+.logo span{
+    color:var(--brown);
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    font-size:14px;
+    font-weight:600;
+    color:#a38a75;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--brown);
+}
+
+.nav-btn{
+    padding:11px 20px;
+    background:var(--brown);
+    color:rgb(96, 76, 76)!important;
+    border-radius:30px;
+}
+
+.nav-btn:hover{
+    background:#805626;
+    transform:translateY(-2px);
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    padding:150px 7% 90px;
+
+    display:flex;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(28,21,16,.82),
+        rgba(28,21,16,.52),
+        rgba(28,21,16,.25)
+    ),
+    url("https://fastleather.pk/wp-content/uploads/2026/07/brown-tip-double-pelt-5-200x200.png");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:760px;
+    color:rgb(170, 138, 138);
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid#f8f8f800;
+    border-radius:50px;
+    font-size:11px;
+    letter-spacing:3px;
+    margin-bottom:24px;
+}
+
+.hero h1{
+    font-size:clamp(48px,7vw,82px);
+    line-height:1.02;
+    letter-spacing:-2px;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+.hero h1 span{
+    color:#e4b77f;
+}
+
+.hero p{
+    max-width:650px;
+    font-size:18px;
+    line-height:1.8;
+    color:#eee7df;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:6px;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.5px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--brown);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#805626;
+    transform:translateY(-3px);
+}
+
+.btn-light{
+    border:1px solid rgba(255,255,255,.7);
+    color:white;
+}
+
+.btn-light:hover{
+    background:white;
+    color:var(--dark);
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+section{
+    scroll-margin-top:80px;
+}
+
+.section{
+    padding:105px 7%;
+}
+
+.section-title{
+    max-width:700px;
+    margin:0 auto 55px;
+    text-align:center;
+}
+
+.section-title span{
+    color:var(--brown);
+    font-size:11px;
+    letter-spacing:3px;
+    font-weight:800;
+}
+
+.section-title h2{
+    margin:10px 0 15px;
+    font-size:44px;
+    line-height:1.15;
+    letter-spacing:-1px;
+    color:var(--dark);
+}
+
+.section-title p{
+    color:var(--muted);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    background:white;
+}
+
+.about-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:75px;
+    align-items:center;
+}
+
+.about-image{
+    height:540px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.13);
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.about-image:hover img{
+    transform:scale(1.04);
+}
+
+.about-text span{
+    color:var(--brown);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.about-text h2{
+    font-size:45px;
+    line-height:1.15;
+    letter-spacing:-1px;
+    margin:12px 0 22px;
+    color:var(--dark);
+}
+
+.about-text p{
+    color:#706961;
+    margin-bottom:17px;
+}
+
+.features{
+    margin-top:28px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+}
+
+.feature{
+    padding:16px;
+    background:#f7f2eb;
+    border-radius:8px;
+    border-left:3px solid var(--brown);
+    font-size:14px;
+    font-weight:700;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+    background:var(--cream);
+}
+
+.product-grid{
+    max-width:1250px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    transition:.35s;
+    border:1px solid #eee7df;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.product-image{
+    height:285px;
+    overflow:hidden;
+    background:#eee;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.07);
+}
+
+.product-info{
+    padding:21px;
+}
+
+.product-info h3{
+    font-size:17px;
+    line-height:1.4;
+    color:var(--dark);
+    margin-bottom:8px;
+}
+
+.product-info p{
+    color:#777;
+    font-size:13px;
+    min-height:42px;
+}
+
+.price{
+    display:inline-block;
+    margin-top:13px;
+    color:var(--brown);
+    font-size:18px;
+    font-weight:800;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    background:white;
+}
+
+.gallery-grid{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.gallery-item{
+    height:280px;
+    overflow:hidden;
+    border-radius:14px;
+    background:#eee;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why-us{
+    background:var(--dark);
+    color:white;
+}
+
+.why-us .section-title h2{
+    color:white;
+}
+
+.why-us .section-title p{
+    color:#c9c1b9;
+}
+
+.why-grid{
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.why-card{
+    padding:38px 27px;
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:15px;
+    background:rgba(255,255,255,.035);
+
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(196,145,86,.6);
+}
+
+.why-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+    background:var(--brown);
+    font-size:24px;
+}
+
+.why-card h3{
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:#cfc7bf;
+    font-size:14px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    padding:100px 7%;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(35,26,19,.82),
+        rgba(35,26,19,.82)
+    ),
+    url("https://fastleather.pk/wp-content/uploads/2024/04/81oWRihu0L._AC_SL1500_-Copy-200x200.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.cta h2{
+    font-size:48px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.cta p{
+    max-width:650px;
+    margin:0 auto 28px;
+    color:#f6f2f0;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:var(--cream);
+}
+
+.contact-container{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:55px;
+}
+
+.contact-info h2{
+    font-size:42px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.contact-info>p{
+    color:#6d1d1d;
+    margin-bottom:30px;
+}
+
+.contact-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:23px;
+}
+
+.contact-icon{
+    min-width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+    background:var(--brown);
+    color:rgb(246, 245, 239);
+}
+
+.contact-item h4{
+    margin-bottom:2px;
+}
+
+.contact-item p,
+.contact-item a{
+    color:#070707;
+    font-size:14px;
+}
+
+.contact-item a:hover{
+    color:var(--brown);
+}
+
+.contact-form{
+    background:white;
+    padding:38px;
+    border-radius:16px;
+    box-shadow:0 15px 45px rgba(0,0,0,.07);
+}
+
+.contact-form h3{
+    font-size:27px;
+    margin-bottom:25px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.input-group{
+    margin-bottom:17px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:7px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    width:100%;
+    padding:13px 14px;
+
+    border:1px solid var(--border);
+    border-radius:7px;
+    outline:none;
+
+    font-family:inherit;
+    font-size:14px;
+    background:#fffdfb;
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+    border-color:var(--brown);
+    box-shadow:0 0 0 3px rgba(168,117,61,.08);
+}
+
+.input-group textarea{
+    height:130px;
+    resize:vertical;
+}
+
+.submit-btn{
+    width:100%;
+    border:0;
+    cursor:pointer;
+
+    padding:14px;
+
+    background:var(--brown);
+    color:white;
+
+    border-radius:7px;
+    font-size:14px;
+    font-weight:800;
+
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#805626;
+    transform:translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#1d1713;
+    color:#ddd;
+    padding:60px 7% 25px;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-logo{
+    font-size:25px;
+    font-weight:800;
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    color:#c18b50;
+}
+
+.footer-col p{
+    color:#aaa;
+    font-size:14px;
+    max-width:400px;
+}
+
+.footer-col h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer-col a{
+    display:block;
+    color:#aaa;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.footer-col a:hover{
+    color:#c18b50;
+}
+
+.copyright{
+    max-width:1200px;
+    margin:40px auto 0;
+    padding-top:20px;
+
+    border-top:1px solid rgba(244, 235, 235, 0.1);
+
+    text-align:center;
+    color:#f4f0f0;
+    font-size:13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1050px){
+
+    .product-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:850px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:76px;
+        left:0;
+        width:100%;
+
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+
+        background:rgb(214, 163, 163);
+        box-shadow:0 10px 20px rgba(235, 225, 225, 0.08);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        border-bottom:1px solid #564545;
+    }
+
+    .nav-links a{
+        display:block;
+        padding:15px 7%;
+    }
+
+    .nav-btn{
+        border-radius:0;
+        background:transparent;
+        color:#453a31!important;
+    }
+
+    .about-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about-image{
+        height:430px;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:550px){
+
+    .hero{
+        padding:130px 6% 70px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section{
+        padding:75px 6%;
+    }
+
+    .section-title h2,
+    .about-text h2,
+    .contact-info h2{
+        font-size:34px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-image{
+        height:310px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item{
+        height:310px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form{
+        padding:25px;
+    }
+
+    .cta h2{
+        font-size:35px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header>
+
+<div class="navbar">
+
+<a href="#home" class="logo">
+Soft Touch <span>Leather</span>
+</a>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#why-us">Why Us</a></li>
+<li><a href="#contact" class="nav-btn">Contact</a></li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<span class="hero-tag">
+PREMIUM • NATURAL • TIMELESS
+</span>
+
+<h1>
+Luxury You Can<br>
+<span>Feel Naturally.</span>
+</h1>
+
+<p>
+Discover beautifully soft sheepskins, premium sheep rugs and
+natural fur pieces created to add warmth, comfort and effortless
+luxury to modern spaces.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products" class="btn btn-primary">
+EXPLORE COLLECTION
+</a>
+
+<a href="#contact" class="btn btn-light">
+TALK TO US
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about" id="about">
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img
+src="https://fastleather.pk/wp-content/uploads/2025/06/71DLIVLJHL._AC_SL1500_-200x200.jpg"
+alt="Premium Fluffy Sheepskin Rug">
+
+</div>
+
+
+<div class="about-text">
+
+<span>THE SOFT TOUCH DIFFERENCE</span>
+
+<h2>
+Natural texture.<br>
+Exceptional comfort.
+</h2>
+
+<p>
+Soft Touch Leather brings together premium natural sheepskins,
+sheep rugs and luxurious fur rugs for customers who value
+quality, comfort and refined style.
+</p>
+
+<p>
+Each piece adds a warm, soft and distinctive character to
+bedrooms, living spaces, chairs and modern interiors.
+</p>
+
+<div class="features">
+
+<div class="feature">
+✓ Natural Sheepskin
+</div>
+
+<div class="feature">
+✓ Soft & Fluffy Wool
+</div>
+
+<div class="feature">
+✓ Premium Quality
+</div>
+
+<div class="feature">
+✓ Timeless Style
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section class="section products" id="products">
+
+<div class="section-title">
+
+<span>THE COLLECTION</span>
+
+<h2>
+Made for Comfort. Designed for Style.
+</h2>
+
+<p>
+Explore our selection of natural sheepskin rugs in rich,
+soft and elegant textures.
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2026/07/brown-tip-double-pelt-5-200x200.png"
+alt="Brown Tip Double Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Brown Tip Double Sheepskin Rug</h3>
+
+<p>
+Large genuine sheep fur wool throw rug.
+</p>
+
+<span class="price">₨5,200</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2026/07/Black-Sheepskin-rug-2-200x200.png"
+alt="Black Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Black Sheepskin Rug</h3>
+
+<p>
+Premium Australian sheepskin fur rug.
+</p>
+
+<span class="price">₨20,000</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2022/10/Ivory-single-plet-sheepskin-rug-3-200x200.png"
+alt="Ivory White Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Ivory White Sheepskin Rug</h3>
+
+<p>
+Natural ivory white Australian sheepskin.
+</p>
+
+<span class="price">₨20,000</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2026/01/unnamed-64-200x200.jpg"
+alt="Brown Wolf Tip Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Brown Wolf Tip Sheepskin Rug</h3>
+
+<p>
+Soft and fluffy double sheepskin throw.
+</p>
+
+<span class="price">₨5,200</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2025/06/71DLIVLJHL._AC_SL1500_-200x200.jpg"
+alt="Grey Tip Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Grey Tip Sheepskin Rug</h3>
+
+<p>
+Fluffy New Zealand lambskin luxury rug.
+</p>
+
+<span class="price">₨5,200</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2025/01/81Aht3S0yhL._AC_SL1280_-200x200.jpg"
+alt="Grey Double Pelt Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Grey Double Pelt Rug</h3>
+
+<p>
+Premium grey sheep hide rug.
+</p>
+
+<span class="price">₨5,200</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2024/05/91jVYa-5dL._AC_SL1500_-200x200.jpg"
+alt="Eclipse Brown Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Eclipse Brown Sheepskin Rug</h3>
+
+<p>
+Natural brown sheep floor mat rug.
+</p>
+
+<span class="price">₨2,200</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2024/04/double-pelt-sheepskin-rug-brown-600x600-1-200x200.jpg"
+alt="Brown Double Pelt Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Brown Double Pelt Rug</h3>
+
+<p>
+Large natural brown sheep area rug.
+</p>
+
+<span class="price">₨5,200</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2024/04/81oWRihu0L._AC_SL1500_-Copy-200x200.jpg"
+alt="Ivory White Quad Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Ivory White Quad Rug</h3>
+
+<p>
+Large four-pelt premium sheep rug.
+</p>
+
+<span class="price">₨11,000</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2022/10/81-82XrGGkL._AC_SL1500_-200x200.jpg"
+alt="Champagne Quad Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Champagne Quad Rug</h3>
+
+<p>
+Soft champagne-colored natural fur.
+</p>
+
+<span class="price">₨11,000</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2022/10/21677399785de165b1c250ce8370091b-200x200.jpg"
+alt="Black Double Pelt Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Black Double Pelt Rug</h3>
+
+<p>
+Large black sheepskin fur rug.
+</p>
+
+<span class="price">₨5,000</span>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+<img
+src="https://fastleather.pk/wp-content/uploads/2022/10/71OqaNag6L._AC_SY355_-200x200.jpg"
+alt="Champagne Australian Sheepskin Rug">
+</div>
+
+<div class="product-info">
+
+<h3>Champagne Australian Rug</h3>
+
+<p>
+Natural Australian fur sheep rug.
+</p>
+
+<span class="price">₨2,500</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="section gallery" id="gallery">
+
+<div class="section-title">
+
+<span>VISUAL COLLECTION</span>
+
+<h2>
+Natural Beauty, Beautifully Displayed.
+</h2>
+
+<p>
+A closer look at our soft, natural and luxurious rug collection.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2026/07/brown-tip-double-pelt-5-200x200.png" alt="Brown Sheepskin">
+</div>
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2026/07/Black-Sheepskin-rug-2-200x200.png" alt="Black Sheepskin">
+</div>
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2022/10/Ivory-single-plet-sheepskin-rug-3-200x200.png" alt="Ivory Sheepskin">
+</div>
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2026/01/unnamed-64-200x200.jpg" alt="Brown Wolf Tip Rug">
+</div>
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2025/06/71DLIVLJHL._AC_SL1500_-200x200.jpg" alt="Grey Tip Sheepskin">
+</div>
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2025/01/81Aht3S0yhL._AC_SL1280_-200x200.jpg" alt="Grey Double Pelt">
+</div>
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2024/05/91jVYa-5dL._AC_SL1500_-200x200.jpg" alt="Brown Eclipse Rug">
+</div>
+
+<div class="gallery-item">
+<img src="https://fastleather.pk/wp-content/uploads/2022/10/21677399785de165b1c250ce8370091b-200x200.jpg" alt="Black Double Pelt">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WHY US
+========================= -->
+
+<section class="section why-us" id="why-us">
+
+<div class="section-title">
+
+<span>WHY SOFT TOUCH</span>
+
+<h2>
+Luxury Begins With Quality.
+</h2>
+
+<p>
+Natural materials, beautiful textures and a collection made
+for people who appreciate refined comfort.
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<div class="why-icon">✦</div>
+
+<h3>Natural Collection</h3>
+
+<p>
+Authentic sheepskins and natural fur rugs selected for their
+beautiful texture and character.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">❖</div>
+
+<h3>Soft & Fluffy</h3>
+
+<p>
+Enjoy the warm, soft and luxurious feel of premium natural wool.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">★</div>
+
+<h3>Elegant Interiors</h3>
+
+<p>
+Perfect for bedrooms, living rooms, chairs and stylish modern spaces.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<h2>
+Make Your Space Feel Special.
+</h2>
+
+<p>
+Bring warmth, softness and natural character into your home
+with a premium Soft Touch Lether rug.
+</p>
+
+<a href="#contact" class="btn btn-primary">
+START AN ENQUIRY
+</a>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact" id="contact">
+
+<div class="section-title">
+
+<span>CONTACT</span>
+
+<h2>
+Let's Find the Right Rug for You.
+</h2>
+
+<p>
+Tell us what you are looking for and our team will help you
+with product information and enquiries.
+</p>
+
+</div>
+
+
+<div class="contact-container">
+
+
+<div class="contact-info">
+
+<h2>
+Let's Talk.
+</h2>
+
+<p>
+Have a question about our sheepskins or natural fur rugs?
+Contact Soft Touch Lether directly.
+</p>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">☎</div>
+
+<div>
+
+<h4>Phone</h4>
+
+<a href="tel:03158977668">
+03158977668
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">✉</div>
+
+<div>
+
+<h4>Email</h4>
+
+<a href="mailto:h2781464@gmail.com">
+h2781464@gmail.com
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">⌂</div>
+
+<div>
+
+<h4>Collection</h4>
+
+<p>
+Sheepskins • Sheep Rugs • Natural Fur Rugs
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<form class="contact-form" id="contactForm">
+
+<h3>
+Send Your Enquiry
+</h3>
+
+
+<div class="form-row">
+
+<div class="input-group">
+
+<label>Your Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter your phone"
+required>
+
+</div>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Product</label>
+
+<select id="product">
+
+<option value="">Select a product</option>
+
+<option>Sheepskin Rug</option>
+
+<option>Sheep Rug</option>
+
+<option>Natural Fur Rug</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Message</label>
+
+<textarea
+id="message"
+placeholder="Tell us what you are looking for..."
+required></textarea>
+
+</div>
+
+
+<button type="submit" class="submit-btn">
+SEND ENQUIRY ON WHATSAPP
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div class="footer-col">
+
+<div class="footer-logo">
+Soft Touch <span>Lether</span>
+</div>
+
+<p>
+Premium sheepskins, sheep rugs and natural fur rugs designed
+to add softness, warmth and timeless character to modern spaces.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Explore</h3>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Contact</h3>
+
+<a href="tel:03158977668">
+03158977668
+</a>
+
+<a href="mailto:h2781464@gmail.com">
+h2781464@gmail.com
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© <span id="year"></span>
+Mohsin Ali.
+
+</div>
+
+</footer>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu(){
+
+    const nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+/* Close menu after clicking */
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document
+        .getElementById("navLinks")
+        .classList.remove("active");
+
+    });
+
+});
+
+
+/* =========================
+   WHATSAPP CONTACT FORM
+========================= */
+
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(event){
+
+    event.preventDefault();
+
+    const name =
+    document.getElementById("name").value;
+
+    const phone =
+    document.getElementById("phone").value;
+
+    const email =
+    document.getElementById("email").value;
+
+    const product =
+    document.getElementById("product").value;
+
+    const message =
+    document.getElementById("message").value;
+
+
+    const whatsappMessage =
+    "Hello Soft Touch Lether,%0A%0A" +
+
+    "Name: " + encodeURIComponent(name) + "%0A" +
+
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+
+    "Email: " + encodeURIComponent(email) + "%0A" +
+
+    "Product: " + encodeURIComponent(product) + "%0A%0A" +
+
+    "Message: " + encodeURIComponent(message);
+
+
+    const whatsappURL =
+    "https://wa.me/923158977668?text=" +
+    whatsappMessage;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+});
+
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
+```
